@@ -7,8 +7,24 @@
 }
 
 body {
-    background-color: #360909;
+    background-image: url('../images/bck.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Faz com que a imagem de fundo permaneça fixa ao rolar a página */
     font-family: "Bodoni Moda", serif;
+    color: #ebe0c8; /* Ajusta o contraste com a nova imagem */
+}
+
+.hero .background-image {
+    background-image: url('../images/background.png'); /* Mantém a imagem de capa */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(70%);
 }
 
 .header {
